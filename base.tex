@@ -1,6 +1,19 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage[margin=0.25in]{geometry}
 
+% Copied from old resume. TODO: Revise
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resheading}[1]{
+    {\large \textbf{#1}}
+    \sectionline
+}
+\newcommand{\colfill}{@{\extracolsep{\fill}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l\colfill r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
 \begin{document}
 \begin{center}
 \textbf{\Large Title}
@@ -14,11 +27,17 @@
 \rule{1.0\textwidth}{1.5pt}
 \vspace{0.1\baselineskip}
 \newline
+
 \begin{minipage}{0.1\textwidth}
     \textbf{This is a Header}
 \end{minipage}
 \hspace{0.04\textwidth}
 \begin{minipage}{0.8\textwidth}
-    This is filling that Lucas Saldyt wrote to fill the large space on the right hand side of the template which will eventually hold a very very very very very nice looking resume!
+    \ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
+ 	\begin{itemize}
+ 		\resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
+        \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
+ 		\resitem{Independently prototyped original display profile saving system for launch control engineers}
+ 	\end{itemize}
 \end{minipage}
 \end{document}

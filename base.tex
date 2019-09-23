@@ -14,6 +14,18 @@
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
+% Section!
+\newcommand{\ressection}[2]
+{
+\begin{minipage}[t]{0.1\textwidth}
+    \textbf{#1}
+\end{minipage}
+\hspace{0.04\textwidth}
+\begin{minipage}[t]{0.8\textwidth}
+    #2
+\end{minipage}
+}
+
 \begin{document}
 \begin{center}
 \textbf{\Large Title}
@@ -27,17 +39,12 @@
 \rule{1.0\textwidth}{1.5pt}
 \vspace{0.1\baselineskip}
 \newline
+\ressection{Experience}
+{\ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
+\begin{itemize}
+	\resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
+     \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
+	\resitem{Independently prototyped original display profile saving system for launch control engineers}
+\end{itemize}}
 
-\begin{minipage}[t]{0.1\textwidth}
-    \textbf{This is a Header}
-\end{minipage}
-\hspace{0.04\textwidth}
-\begin{minipage}[t]{0.8\textwidth}
-    \ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
- 	\begin{itemize}
- 		\resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
-        \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
- 		\resitem{Independently prototyped original display profile saving system for launch control engineers}
- 	\end{itemize}
-\end{minipage}
 \end{document}

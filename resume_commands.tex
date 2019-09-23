@@ -1,0 +1,26 @@
+\setlength\itemsep{1em}
+% Copied from old resume. TODO: Revise
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resheading}[1]{
+    {\large \textbf{#1}}
+    \sectionline
+}
+\newcommand{\colfill}{@{\extracolsep{\fill}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l\colfill r}
+        \textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+% Section!
+\newcommand{\ressection}[2]
+{
+\vspace{0.1in}
+\begin{minipage}[t]{0.05\textwidth}
+    \textbf{#1}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[t]{0.9\textwidth}
+    #2
+\end{minipage}
+}

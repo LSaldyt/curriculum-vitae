@@ -1,30 +1,10 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage[margin=0.25in]{geometry}
+\usepackage{helvet}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.0} 
 
-% Copied from old resume. TODO: Revise
-\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
-\newcommand{\resheading}[1]{
-    {\large \textbf{#1}}
-    \sectionline
-}
-\newcommand{\colfill}{@{\extracolsep{\fill}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l\colfill r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-
-% Section!
-\newcommand{\ressection}[2]
-{
-\begin{minipage}[t]{0.1\textwidth}
-    \textbf{#1}
-\end{minipage}
-\hspace{0.04\textwidth}
-\begin{minipage}[t]{0.8\textwidth}
-    #2
-\end{minipage}
-}
+\input{resume_commands}
 
 \begin{document}
 \begin{center}
@@ -38,12 +18,75 @@
 \rule{1.0\textwidth}{1.5pt}
 \vspace{-.5\baselineskip}
 \newline
-\ressection{Experience}
-{\ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
-\begin{itemize}
-	\resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
-     \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
-	\resitem{Independently prototyped original display profile saving system for launch control engineers}
-\end{itemize}}
-
+    \ressection{Education}{
+    \ressubheading{Arizona State University: Barrett, The Honors College}{Tempe, Arizona}{Bachelor of Science in Computer Science, GPA: 3.7}{Sep. 2017 - May 2021}
+    }
+    \newline
+    \ressection{Experience}
+    { 
+    \ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
+             \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
+            \resitem{Independently prototyped original display profile saving system for launch control engineers}
+        \end{itemize}
+        \vspace{0.1in}
+        \ressubheading{Sandia National Laboratories (Dr. Erik Nielsen)}{Albuquerque, New Mexico}{Quantum Computation Intern}{Jun. 2015 - Sep. 2018}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Developed high-fidelity quantum benchmarking (Gate Set Tomography) software}
+            \resitem{Created distributed high-performance simulation, verification, and data analysis software}
+            \resitem{Assisted in publishing papers in quantum benchmarking}
+        \end{itemize}
+        \vspace{0.1in}
+         \ressubheading{Los Alamos National Laboratories (Dr. Scott Pakin)}{Albuquerque, New Mexico}{Quantum Computation Shadow}{Apr. 2017}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Benchmarked the knapsack problem on LANL's DWave annealer and IBM's machines}
+        \end{itemize}
+        \vspace{0.1in}
+        \ressubheading{ASU Complex Systems Research (Dr. Yun Kang)}{Tempe, Arizona}{Mathematics Research Assistant}{Oct. 2018 - Current}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Unique math/computer modeling and visualization of ant nest choice and alarm propagation}
+            % I would pull any publications out into their own separate section, especially if that's a first authorship -JS
+            \resitem{Author of a computation biology paper on alarm propagation, published in PNAS}
+        \end{itemize}
+        \vspace{0.1in}
+         \ressubheading{Fulton Undergraduate Research Initiative (Dr. Ajay Bansal)}{Tempe, Arizona}{Machine Learning Researcher}{Sep. 2018 - Jun. 2019}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Developed Qurry, a quantum programming language}
+            \resitem{Machine learning research, focused around Kolmogorov complexity and program learning}
+        \end{itemize}
+        \vspace{0.1in}
+        \ressubheading{The Fluid Analogies Research Group (Dr. Alexandre Linhares)}{Remote (paid)}{Cognitive Science Research Assistant}{Oct. 2016 - Sep. 2018}
+        \begin{itemize}
+            \setlength\itemsep{0em}
+            \resitem{Revitalized of Douglas Hofstadter's ``copycat'' cognitive model}
+            \resitem{Statistical analysis/visualization and comparison of various models to human data}
+        \end{itemize}
+        \vspace{0.1in}
+         \ressubheading{Unitary Fund}{Remote (paid)}{Quantum Software Researcher}{Jun. 2018 - Current}
+        \begin{itemize}
+                \setlength\itemsep{0em}
+                \resitem{Prototyping of a quantum programming language, called ``Qurry''}
+                \resitem{Presented in Brussels, Belgium at the FOSDEM Quantum Computing Conference}
+        \end{itemize}
+        }
+        \vspace{0.1in}
+        \newline
+        \ressection{Skills}{
+\begin{description}
+    \item[Programming Languages:] 
+        Python, C++, Java, Bash, Clojure (LISPs), Haskell, C, MATLAB, R, Fortran
+    \item[Applications:]
+        Vim, \LaTeX, Git, MPI, Supercomputing (Slurm), Jupyter Notebook, Autodesk Design 
+    \item[Operating Systems:]
+        Linux, MacOS X, Windows
+    \item[Natural Languages:] 
+        English, Ukranian, Spanish
+\end{description}
+}
 \end{document}

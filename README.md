@@ -1,2 +1,2 @@
 # curriculum-vitae
-See [here](base.pdf)
+See [here](curriculum_vitae.pdf)

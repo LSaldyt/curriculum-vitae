@@ -3,7 +3,7 @@
 \usepackage{helvet}
 \usepackage{setspace}
 \renewcommand{\baselinestretch}{1.0} 
-
+\renewcommand{\familydefault}{\sfdefault}
 \input{resume_commands}
 
 \begin{document}
@@ -18,21 +18,25 @@
 \rule{1.0\textwidth}{1.5pt}
 \vspace{-.5\baselineskip}
 \newline
-    \ressection{Education}{
-    \ressubheading{Arizona State University: Barrett, The Honors College}{Tempe, Arizona}{Bachelor of Science in Computer Science, GPA: 3.7}{Sep. 2017 - May 2021}
-    }
-    \newline
     \ressection{Experience}
     { 
-    \ressubheading{National Aeronautics and Space Administration}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
+     \item
+     \ressubheading{NASA Glenn Research Center}{Cleveland, Ohio}{Machine Learning Intern}{Jan. 2020 - Current}
+ 	\begin{itemize}
+ 		% \resitem{Architected a machine learning tool which aggregates a database used for biomimetic aerospace system design}
+        \resitem{Improved a search engine by expanding the natural language processing system using a uniquely invented topic translation algorithm}
+        \resitem{Drafted efficient algorithm for building and querying the internal graph database using the trie data structure}
+ 		% \resitem{Implemented data mining and machine learning algorithms for collecting and processing information on the web into graph database entries (including image classification and segmentation)}
+ 	\end{itemize}
+    \vspace{0.1in}
+    \ressubheading{NASA Kennedy Space Center}{Cape Canaveral, Florida}{Software Engineering Intern}{Jun. 2019 - Aug. 2019}
         \begin{itemize}
             \setlength\itemsep{0em}
-            \resitem{Worked on class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
-             \resitem{Created, benchmarked, and optimized verification/validation software for launch control tests}
-            \resitem{Independently prototyped original display profile saving system for launch control engineers}
+            \resitem{Benchmarked and developed class A, safety-critical, human rated spaceflight ground control software by participating in the full software development lifecycle and using agile processes}
+            \resitem{Independently prototyped original display profile saving system for launch control engineers, effectively saving each engineer half an hour of setup time during each launch, and minimizing the probability of human error during setup}
         \end{itemize}
         \vspace{0.1in}
-        \ressubheading{Sandia National Laboratories (Dr. Erik Nielsen)}{Albuquerque, New Mexico}{Quantum Computation Intern}{Jun. 2015 - Sep. 2018}
+        \ressubheading{Sandia National Laboratories (Dr. Erik Nielsen)}{Albuquerque, New Mexico}{Quantum Computation Research Intern}{Jun. 2015 - Sep. 2018}
         \begin{itemize}
             \setlength\itemsep{0em}
             \resitem{Developed high-fidelity quantum benchmarking (Gate Set Tomography) software}
@@ -40,47 +44,34 @@
             \resitem{Assisted in publishing papers in quantum benchmarking}
         \end{itemize}
         \vspace{0.1in}
-         \ressubheading{Los Alamos National Laboratories (Dr. Scott Pakin)}{Albuquerque, New Mexico}{Quantum Computation Shadow}{Apr. 2017}
-        \begin{itemize}
-            \setlength\itemsep{0em}
-            \resitem{Benchmarked the knapsack problem on LANL's DWave annealer and IBM's machines}
-        \end{itemize}
-        \vspace{0.1in}
-        \ressubheading{ASU Complex Systems Research (Dr. Yun Kang)}{Tempe, Arizona}{Mathematics Research Assistant}{Oct. 2018 - Current}
+        \ressubheading{ASU Complex Systems Research (Dr. Yun Kang)}{Tempe, Arizona}{Mathematics Research Assistant}{Oct. 2018 - Jun. 2019}
         \begin{itemize}
             \setlength\itemsep{0em}
             \resitem{Unique math/computer modeling and visualization of ant nest choice and alarm propagation}
-            % I would pull any publications out into their own separate section, especially if that's a first authorship -JS
             \resitem{Author of a computation biology paper on alarm propagation, published in PNAS}
         \end{itemize}
         \vspace{0.1in}
-         \ressubheading{Fulton Undergraduate Research Initiative (Dr. Ajay Bansal)}{Tempe, Arizona}{Machine Learning Researcher}{Sep. 2018 - Jun. 2019}
+         \ressubheading{Fulton Undergraduate Research Initiative (Dr. Ajay Bansal)}{Tempe, Arizona}{Machine Learning Research Assistant}{Sep. 2018 - Jun. 2019}
         \begin{itemize}
             \setlength\itemsep{0em}
-            \resitem{Developed Qurry, a quantum programming language}
             \resitem{Machine learning research, focused around Kolmogorov complexity and program learning}
+            \resitem{Developed Qurry, a quantum programming language}
+            \resitem{Presented in Brussels, Belgium at the FOSDEM Quantum Computing Conference}
         \end{itemize}
         \vspace{0.1in}
-        \ressubheading{The Fluid Analogies Research Group (Dr. Alexandre Linhares)}{Remote (paid)}{Cognitive Science Research Assistant}{Oct. 2016 - Sep. 2018}
-        \begin{itemize}
-            \setlength\itemsep{0em}
-            \resitem{Revitalized of Douglas Hofstadter's ``copycat'' cognitive model}
-            \resitem{Statistical analysis/visualization and comparison of various models to human data}
-        \end{itemize}
-        \vspace{0.1in}
-         \ressubheading{Unitary Fund}{Remote (paid)}{Quantum Software Researcher}{Jun. 2018 - Current}
-        \begin{itemize}
-                \setlength\itemsep{0em}
-                \resitem{Prototyping of a quantum programming language, called ``Qurry''}
-                \resitem{Presented in Brussels, Belgium at the FOSDEM Quantum Computing Conference}
-        \end{itemize}
         }
+    \newline
+            \ressection{Education}{
+    \ressubheading{Arizona State University: Barrett, The Honors College}{Tempe, Arizona}{Bachelor of Science in Computer Science, GPA: 3.6}{Sep. 2017 - May 2021}
+    }
         \vspace{0.1in}
         \newline
         \ressection{Skills}{
 \begin{description}
     \item[Programming Languages:] 
         Python, C++, Java, Bash, Clojure (LISPs), Haskell, C, MATLAB, R, Fortran
+    \item[Technologies:]
+        tensorflow, numpy, pandas, nltk, neo4j, SQL, postgresSQL, mongoDB
     \item[Applications:]
         Vim, \LaTeX, Git, MPI, Supercomputing (Slurm), Jupyter Notebook, Autodesk Design 
     \item[Operating Systems:]

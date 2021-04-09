@@ -1,26 +1,40 @@
-\setlength\itemsep{1em}
-% Copied from old resume. TODO: Revise
-\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+
+
+\newcommand{\resitem}[2]{
+    \begin{minipage}{0.7\textwidth}
+    \item #1 
+    \vspace{0.3em}
+    \end{minipage}
+    \begin{minipage}{0.1\textwidth}
+    \end{minipage}
+    \begin{minipage}{0.2\textwidth}
+    \rightline{\footnotesize{\textit{#2}}}
+    \end{minipage}
+    \newline
+}
 \newcommand{\resheading}[1]{
     {\large \textbf{#1}}
     \sectionline
 }
 \newcommand{\colfill}{@{\extracolsep{\fill}}}
+
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l\colfill r}
-        \textbf{#1} & #2 \\
+\begin{tabular*}{1.0\textwidth}{l\colfill r}
+        \textbf{#1} & #2 \\[0.35em]
 		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
+\end{tabular*}}
+
+\newcommand{\ressubitem}[2]{
+\begin{tabular*}{1.0\textwidth}{l}
+        #1 \\
+        #2 \\
+\end{tabular*}}
 
 % Section!
 \newcommand{\ressection}[2]
 {
-\vspace{0.1in}
-\begin{minipage}[t]{0.05\textwidth}
-    \textbf{#1}
-\end{minipage}
-\hspace{0.05\textwidth}
-\begin{minipage}[t]{0.9\textwidth}
-    #2
-\end{minipage}
+\begin{center}
+\underline{\Medium\textbf{#1}}
+\end{center}
+#2
 }
